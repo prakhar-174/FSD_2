@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title> 
+    <link rel="icon" href="/Images/icons8-physics-wallah-16.png">
+    <style>
+        h1{
+            font-size: 45px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Registration Form</h1>
+    <br>
+    <form>       
+        <fieldset>
+            <legend>General Details</legend><br>
+            <label for="firstname">First Name: </label>
+            <input type="text" placeholder="Enter Name" id="firstname" required>
+            <label for="lastname">Last Name: </label>
+            <input type="text" placeholder="Enter last Name" id="lastname"><br><br>
+            <label for="fathername">Father's Name: </label>
+            <input type="text" placeholder="Enter Father's Name" id="fathername"><br><br>
+            <label for="dob">Enter D.O.B.:</label>
+            <input type="date" id="dob" required><br><br>
+            <label for="gender">Select Gender: </label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" value="female" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" value="other" id="other" name="gender">
+            <label for="other">Other</label><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Course Detail</legend><br>
+            <label for="course">Select Course:</label>
+            <select> <option value="option">Select Option</option> <option value="btech">B.tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+            <label for="Branch">Select Branch:</label>
+            <select>
+                <option value="option">Select Option</option>
+                <option value="CSE">CSE</option>
+                <option value="CS">CS</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EE">EE</option>
+            </select><br><br>
+            <label for="year">Enter Year: </label>
+            <input type="number" placeholder="Enter Year" min="1" max="4" id="year" required><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Additional Details</legend><br>
+            <label for="email">Enter Email:</label>
+            <input type="email" placeholder="Enter email-id" id="email" required><br><br>
+            <label for="password">Set Password:</label>
+            <input type="password" placeholder="Enter Password" id="password"><br><br>
+            <label for="repassword">Re-Enter Password:</label>
+            <input type="password" placeholder="Re-Enter Password" id="repassword"><br><br>
+            <label for="file">Upload Image:</label>
+            <input type="file" value="file" id="file"><br><br>
+            <textarea placeholder="Tell about your achievements." rows="5" cols="50"></textarea><br>
+        </fieldset><br>
+            <input type="checkbox" id="terms" value="agree">
+        <label for="terms">I hereby declare all the information I filled is correct.</label><br><br>
+        <input type="reset"> <input type="submit" value="submit">
+    </form>
+</body>
+</html> 
